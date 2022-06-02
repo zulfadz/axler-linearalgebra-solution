@@ -5,8 +5,8 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Zul" />
-  <meta name="description" content="Notes on analysis" />
-  <title>Notes on Abbott’s Understanding Analysis</title>
+  <meta name="description" content="Solutions to analysis" />
+  <title>Solutions to Abbott’s Understanding Analysis</title>
   <style>
     html {
       line-height: 1.5;
@@ -179,92 +179,666 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Notes on Abbott’s Understanding Analysis</h1>
+<h1 class="title">Solutions to Abbott’s Understanding Analysis</h1>
 <p class="author">Zul</p>
 </header>
-<h3 id="consequences-of-completeness">Consequences of completeness</h3>
-<h4 id="nested-interval-property">4-1. Nested Interval Property</h4>
-<p>The statement looks similar to Example 1.2.2. My first thought was
-that it’s going to be empty.. I guess the difference is that <span
-class="math inline">I_n = [a_n,b_n]</span> instead of <span
-class="math inline">\{n,n+1,...\}</span> (one, contingent on <span
-class="math inline">a_n</span> rather than <span
-class="math inline">n</span>; two, has an upperbound of <span
-class="math inline">b_n</span>).</p>
-<p>Intuitively, the theorem follows from the fact that all <span
-class="math inline">a_n</span> is bounded by all <span
-class="math inline">b_n</span>, thus by axiom of completeness, there’s
-an <span class="math inline">x</span> nested for all intervals <span
-class="math inline">[a_n,b_n]</span>.</p>
-<h4 id="archimedean-property">4-2. Archimedean Property</h4>
-<p>Intuitively, property 1 saying that <span
-class="math inline">\mathbf{N}</span> is not bounded above. It is
-interesting to note that the proof only depends on axiom of completeness
-and that <span class="math inline">\mathbf{N}</span> is closed under
-addition.</p>
-<p>Not too sure what’s the usefulness of property 2… it’s just a
-reciprocal.. but it’s saying that any positive real number is bigger
-than <span class="math inline">1/n</span> if <span
-class="math inline">n</span> is big enough.</p>
-<h4 id="density-of-q-in-r">4-3. Density of Q in R</h4>
-<p>My god… Abbott is so good at explaining this proof. I have never seen
-any other authors explained the way he does.</p>
-<p>I think the tricky part is just choosing m greater than na, such that
-m is small enough so that</p>
-<p><span class="math display">
-m-1 \leq na &lt;m
-</span></p>
-<p>How do we know such m exists? My first thought is that the key is
-actually to pick <span class="math inline">n</span> big enough so that
-it “step over” <span class="math inline">(a,b)</span>. Such <span
-class="math inline">n</span> exists by property 2 of Archimedean
-property (ah, now i see why it’s useful). As a result, <span
-class="math inline">1/n</span>, scaled by some integer <span
-class="math inline">m</span>, will straddle between <span
-class="math inline">a</span> and <span class="math inline">a+1</span>
-(see figure). Meaning <span class="math inline">m/n</span>.. wait this
-does not follow (i iniatially thought of saying <span
-class="math inline">m/n -1</span> is less than <span
-class="math inline">a</span>, but no, it is <span
-class="math inline">m/n - 1/n</span>)</p>
-<p><img src="./images/4_3_qdense.png" /></p>
-<p>Ok i just looked at <a
-href="https://math.stackexchange.com/questions/103839/proof-that-mathbbq-is-dense-in-mathbbr">MO</a>.
-To prove existence of <span class="math inline">m</span>, given any real
-<span class="math inline">r</span>,</p>
+<h1 id="table-of-contents">Table of contents</h1>
 <ol type="1">
-<li>if <span class="math inline">r&gt;0</span>, then <span
-class="math inline">\exists m</span>, where <span
-class="math inline">m</span> is natural number and <span
-class="math inline">m&gt;r</span>. Let <span
-class="math inline">M</span> be the set of such m’s. By well-ordering,
-there is a <span class="math inline">m_0 \leq m</span>. If <span
-class="math inline">m_0=1</span>, then <span
-class="math inline">0&lt;r&lt;1</span> and we are done. If <span
-class="math inline">m_0&gt;1</span> then <span class="math inline">m_0-1
-\leq r</span> by well-ordering principle.</li>
-<li>If <span class="math inline">r=0</span>, then <span
-class="math inline">m_0 =1</span> and we are done.</li>
-<li>If <span class="math inline">r &lt;0</span>, then let <span
-class="math inline">w = -r</span>. By (1), there is <span
-class="math inline">m_0-1 \leq w &lt;m_0</span>, therefore <span
-class="math inline">-m_0&lt;r \leq 1-m_0</span>. If <span
-class="math inline">r &lt; 1-m_0</span>, we are done. Otherwise, choose
-<span class="math inline">2 - m_0</span> and we are done.</li>
+<li><a href="#c1">Chapter 1</a></li>
 </ol>
-<h4 id="density-of-irrational-in-r">4-4. Density of irrational in R</h4>
-<p>Bro this is cool. I’m shook. Will go to blog post.</p>
-<h4 id="existence-of-square-roots">4-5. Existence of square roots</h4>
-<p>I suppose proof by construction has always been what Im weak at, and
-this theorem requires proof by constructions.</p>
-<p>Essentially, the proof relies on finding a counterexample – namely, a
-number whose square is bigger than <span class="math inline">a^2</span>
-but smaller than 2. To do that, need to use <span class="math inline">(a
-+ 1/n)^{2}</span> and pick and <span class="math inline">n</span> that
-makes the terms less than 2.</p>
-<p>On the other side is finding a number whose square is smaller than
-<span class="math inline">a^2</span> but bigger than 2. Again, key is to
-use <span class="math inline">(a - 1/n)^{2}</span> and to use <span
-class="math inline">n</span> that will make the term bigger than 2.</p>
+<ul>
+<li><a href="#1210">1.2.10</a></li>
+<li><a href="#1211">1.2.11</a></li>
+<li><a href="#1212">1.2.12</a></li>
+<li><a href="#131">1.3.1</a></li>
+<li><a href="#132">1.3.2</a></li>
+<li><a href="#133">1.3.3</a></li>
+<li><a href="#134">1.3.4</a></li>
+<li><a href="#135">1.3.5</a></li>
+<li><a href="#136">1.3.6</a></li>
+<li><a href="#137">1.3.7</a></li>
+<li><a href="#138">1.3.8</a></li>
+<li><a href="#139">1.3.9</a></li>
+<li><a href="#1310">1.3.10</a></li>
+<li><a href="#1311">1.3.11</a></li>
+</ul>
+<p><a name="c1"></a> ## Chapter 1</p>
+<p><a name="1210"></a> ### 1.2.10</p>
+<p>Decide which of the following are true statements. Provide a short
+justification for those that are valid and a counterexample for those
+that are not: 1. Two real numbers satisfy <span
+class="math inline">a&lt;b</span> if and only if <span
+class="math inline">a&lt;b+\epsilon</span> for every <span
+class="math inline">\epsilon&gt;0</span>. 2. Two real numbers satisfy
+<span class="math inline">a&lt;b</span> if <span
+class="math inline">a&lt;b+\epsilon</span> for every <span
+class="math inline">\epsilon&gt;0</span>. 3. Two real numbers satisfy
+<span class="math inline">a \leq b</span> if and only if <span
+class="math inline">a&lt;b+\epsilon</span> for every <span
+class="math inline">\epsilon&gt;0</span>.</p>
+<hr />
+<ol type="1">
+<li>False. Let <span class="math inline">a=b</span>. In this case,
+although <span class="math inline">a&lt;b+ \epsilon</span> for each
+<span class="math inline">\epsilon&gt;0</span>, <span
+class="math inline">a</span> is not smaller than <span
+class="math inline">b</span>. (Note that for the other way around, it is
+true: if <span class="math inline">a&lt;b</span>, then <span
+class="math inline">a&lt;b+\epsilon</span> for every <span
+class="math inline">\epsilon&gt;0</span>. Assume there is some <span
+class="math inline">\epsilon</span> such that <span
+class="math inline">a \geq b+ \epsilon</span>. Then <span
+class="math inline">a-b \geq \epsilon &gt;0</span>, which means <span
+class="math inline">a&gt;b</span>, which is a contradiction).</li>
+<li>False, as above.</li>
+<li>First, show that if <span class="math inline">a \leq b</span>, then
+<span class="math inline">a &lt; b + \epsilon</span> for each <span
+class="math inline">\epsilon &gt;0</span>. This has already been shown
+in 1. Second, show that if <span
+class="math inline">a&lt;b+\epsilon</span> for every <span
+class="math inline">\epsilon&gt;0</span>, then <span
+class="math inline">a \leq b</span>. Assume that <span
+class="math inline">a &gt; b</span>. Take <span
+class="math inline">\epsilon_0 = a-b</span>. This means that $a&lt;b +
+_0 = b + a -b = a $, which is a contradiction.</li>
+</ol>
+<p><a name="1211"></a> ### 1.2.11 Form the logical negation of each
+claim. One trivial way to do this is to simply add “It is not the case
+that…” in front of each assertion. To make this interesting, fashion the
+negation into a positive statement that avoids using the word “not”
+altogether. In each case, make an intuitive guess as to whether the
+claim or its negation is the true statement. 1. For all real numbers
+satisfying <span class="math inline">a&lt;b</span>, there exists an
+<span class="math inline">n \in \mathbf{N}</span> such that <span
+class="math inline">a+1 / n&lt;b</span>. 2. There exists a real number
+<span class="math inline">x&gt;0</span> such that <span
+class="math inline">x&lt;1 / n</span> for all <span
+class="math inline">n \in \mathbf{N}</span>. 3. Between every two
+distinct real numbers there is a rational number.</p>
+<hr />
+<ol type="1">
+<li>There exist some real numbers <span
+class="math inline">a&lt;b</span> such that for all <span
+class="math inline">n \in \mathbf{N}</span>, <span
+class="math inline">a+ 1/n &gt;b</span>. I think the claim is the true
+statement, and the negation is false.</li>
+<li>For all real number <span class="math inline">x&gt;0</span>, <span
+class="math inline">x \geq 1/n</span> for some <span
+class="math inline">n \in \mathbf{N}</span>. The negation is true.</li>
+<li>There exist two distinct real numbers between which there is no
+rational number. I think the claim is true, and the negation is
+false.</li>
+</ol>
+<p><a name="1212"></a> ### 1.2.12 Let <span
+class="math inline">y_{1}=6</span>, and for each <span
+class="math inline">n \in \mathbf{N}</span> define <span
+class="math inline">y_{n+1}=\left(2 y_{n}-6\right) / 3</span></p>
+<ol type="1">
+<li>Use induction to prove that the sequence satisfies <span
+class="math inline">y_{n}&gt;-6</span> for all <span
+class="math inline">n \in \mathbf{N}</span>.</li>
+<li>Use another induction argument to show the sequence <span
+class="math inline">\left(y_{1}, y_{2}, y_{3}, \ldots\right)</span> is
+decreasing.</li>
+</ol>
+<hr />
+<ol type="1">
+<li>The statement is obviously true when <span
+class="math inline">n=1</span>. Assume <span
+class="math inline">y_{n}&gt;-6</span> is true, and we need to show that
+this is true for <span class="math inline">y_{n+1}</span> as well.</li>
+</ol>
+<p><span class="math display">\begin{align*}
+y_{n+1}&amp;= (2 y_{n}-6)/3  \\
+&amp;&gt; (2(-6) -6 )/3   \\
+&amp; &gt; (-12 -6)/3 \\
+&amp;&gt; -6
+\end{align*}</span></p>
+<ol start="2" type="1">
+<li>Since <span class="math inline">y_2 = (2(6)-6)/3=2</span>, <span
+class="math inline">y_1 &gt; y_2</span>. Assume <span
+class="math inline">y_{n-1} &gt; y_{n}</span>, and we need to show that
+<span class="math inline">y_{n} &gt; y_{n+1}</span>.</li>
+</ol>
+<p>Answer 1:</p>
+<p><span class="math display">\begin{align*}
+y_{n+1} &amp;= 2y_{n}/3 -2 \\
+&amp;&lt;0.8y_n -2 \\
+&amp;&lt;0.8y_n \\
+&amp;&lt;y_n
+\end{align*}</span></p>
+<p>Answer 2: Simply multiply 2 across the inequality, minus 6, and
+divide 3, to get <span class="math display">\begin{align*}
+\left(2 y_{n-1}-6\right) / 3 &amp;&gt; \left(2 y_{n}-6\right) / 3 \\
+y_{n}&amp;&gt;y_{n+1}
+\end{align*}</span></p>
+<p><a name="1213"></a> ### 1.2.13 For this exercise, assume Exercise
+1.2.5 has been successfully completed. 1. Show how induction can be used
+to conclude that <span class="math display"> (A_1 \cup A_{2}\cup \cdots
+\cup A_{n})^{c}=A_{1}^{c} \cap A_{2}^{c} \cap \cdots \cap
+A_{n}^{c}</span> for any finite <span class="math inline">n \in
+\mathbf{N}</span>.</p>
+<ol start="2" type="1">
+<li><p>It is tempting to appeal to induction to conclude <span
+class="math display">\left(\bigcup_{i=1}^{\infty}
+A_{i}\right)^{c}=\bigcap_{i=1}^{\infty} A_{i}^{c}</span> but induction
+does not apply here. Induction is used to prove that a particular
+statement holds for every value of <span class="math inline">n \in
+\mathbf{N}</span>, but this does not imply the validity of the infinite
+case. To illustrate this point, find an example of a collection of sets
+<span class="math inline">B_{1}, B_{2}, B_{3}, \ldots</span> where <span
+class="math inline">\bigcap_{i=1}^{n} B_{i} \neq \emptyset</span> is
+true for every <span class="math inline">n \in \mathbf{N}</span>, but
+<span class="math inline">\bigcap_{i=1}^{\infty} B_{i} \neq
+\emptyset</span> fails.</p></li>
+<li><p>Nevertheless, the infinite version of De Morgan’s Law stated in
+(b) is a valid statement. Provide a proof that does not use
+induction.</p></li>
+</ol>
+<hr />
+<ol type="1">
+<li><p>From Exercise 1.2.5, we know that the base case <span
+class="math display">(A_1 \cup A_2)^c = A_1^c \cap A_2^c</span> holds.
+Assume that <span class="math display">(A_1 \cup A_2 \cup \cdots \cup
+A_n)^c = A_1^c \cap A_2^c \cap \cdots \cap A_n^c</span> <span
+style="color:red">Thinking the solution to this is taking longer than
+expected, so refer to online solutions. By associative laws, <span
+class="math display">(A_1 \cup A_2 \cup \cdots \cup A_n \cup A_{n+1})^c
+= ((A_1 \cup A_2 \cup \cdots \cup A_n) \cup A_{n+1})^c </span> which by
+Exercise 1.2.5. implies <span class="math display">(A_1 \cup A_2 \cup
+\cdots \cup A_n)^c \cap A_{n+1}^c </span> From assumption, this is equal
+to <span class="math display"> A_1^c \cap A_2^c \cap \cdots \cap A_n^c
+\cap A_{n+1}^c</span></span></p></li>
+<li><p>Let</p></li>
+</ol>
+<p><span class="math display">\begin{align*}
+B_1 &amp;= \mathbf{N} = \{1,2,3, \cdots\} \\
+B_2 &amp;= \{2,3,4,\cdots\} \\
+B_3 &amp;= \{3,4,5,\cdots\}
+\end{align*}</span> We see that <span class="math display">B_1 \cap B_2
+= B2</span> and we will prove using induction that <span
+class="math display"> \bigcap_{i=1}^{n} B_{i}=B_n</span> Assume the
+above is true for <span class="math inline">n</span>. In the case of
+<span class="math inline">n+1</span>, by associative law, <span
+class="math display">B_1 \cap B_2 \cap  \cdots B_n \cap B_{n+1} =  (B_1
+\cap B_2 \cap  \cdots B_n) \cap B_{n+1}</span> which means <span
+class="math display">B_n \cap B_{n+1} </span> which is equal to <span
+class="math inline">B_{n+1}</span>. Therefore $ <em>{i=1}^{n}
+B</em>{i}=B_n$ holds for all <span class="math inline">n \in
+\mathbf{N}</span>.</p>
+<p>Nonetheless, this does not hold for infinite case, because <span
+class="math display"> \bigcap_{i=1}^{\infty} B_{i}=\emptyset</span> To
+see why, suppose there is <span class="math inline">x \in
+\mathbf{N}</span> which satisfies <span class="math inline">x \in
+\bigcap_{i=1}^{\infty} B_{i}</span>. This means that <span
+class="math inline">x</span> is an element of <span
+class="math inline">B_i</span> for all <span class="math inline">i \in
+\mathbf{N}</span>. However, this is a contradiction because <span
+class="math inline">x</span> is not an element of <span
+class="math inline">B_{x+1}</span>.</p>
+<ol start="3" type="1">
+<li>Let</li>
+</ol>
+<p><span class="math display">x \in \left(\bigcap_{i=1}^\infty
+A_i\right)^c</span></p>
+<p>meaning</p>
+<p><span class="math display">x \notin \left(\bigcap_{i=1}^\infty
+A_i\right)</span></p>
+<p>implying that <span class="math inline">x</span> is not an element of
+<span class="math inline">A_i</span> for all <span
+class="math inline">i</span>.<span style="color:red">Alternatively <span
+class="math inline">x\in A_i^c</span> for all <span
+class="math inline">i</span>.</span> This means that <span
+class="math inline">x \in \bigcup_{i=1}^\infty A_i^c</span> which
+implies</p>
+<p><span class="math display">\left(\bigcap_{i=1}^\infty A_i\right)^c
+\subseteq \bigcup_{i=1}^\infty A_i^c.</span></p>
+<p>Conversely, let</p>
+<p><span class="math display">x \in \bigcup_{i=1}^\infty A_i^c
+</span></p>
+<p>which means that <span class="math inline">x \in A_i^c</span> for all
+<span class="math inline">i</span>, which is the same as <span
+class="math inline">x\notin A_i</span> for all <span
+class="math inline">i</span>. This implies that <span
+class="math inline">x \notin \bigcap_{i=1}^\infty A_i</span>, meaning
+<span class="math inline">x \in \left(\bigcap_{i=1}^\infty
+A_i\right)^c.</span> This implies</p>
+<p><span class="math display">\bigcup_{i=1}^\infty A_i^c \subseteq
+\left(\bigcap_{i=1}^\infty A_i\right)^c  .</span></p>
+<p><a name="131"></a> ### 1.3.1 1. Write a formal definition in the
+style of Definition 1.3.2 for the infimum or greatest lower bound of a
+set. 2. Now, state and prove a version of lemma 1.3.8 for glb.</p>
+<hr />
+<ol type="1">
+<li>A real number <span class="math inline">g</span> is the greatest
+lower bound for a set <span class="math inline">A \subseteq
+\mathbf{R}</span> if it meets the following two criteria:
+<ul>
+<li><span class="math inline">g</span> is a lower bound for <span
+class="math inline">A</span>.</li>
+<li>if <span class="math inline">b</span> is any lower bound for <span
+class="math inline">A</span>, then <span class="math inline">g \geq
+b</span>.</li>
+</ul></li>
+<li>Lemma. Assume <span class="math inline">g \in \mathbf{R}</span> is a
+lower bound for a set <span class="math inline">A \subseteq
+\mathbf{R}</span>. Then <span class="math inline">g = \text{inf
+}A</span> if and only if for every choice $&gt;0 $, there exists an
+element <span class="math inline">a \in A</span> satisfying <span
+class="math inline">g + \epsilon &gt; a.</span>
+<ul>
+<li>Assume <span class="math inline">g = \text{inf } A</span>. Then
+<span class="math inline">g \leq a</span> for all <span
+class="math inline">a</span>. Because <span class="math inline">g</span>
+is the greatest lower bound, <span class="math inline">g +
+\epsilon</span> cannot be <span class="math inline">\leq a</span> for
+all <span class="math inline">a</span>. Otherwise, this will contradict
+statement ii of definition of <span class="math inline">g</span>. Thus,
+there exists some <span class="math inline">a</span> such that <span
+class="math inline">g + \epsilon &gt; a.</span></li>
+<li>Assume <span class="math inline">g \leq a</span> for all <span
+class="math inline">a</span>, and that for all <span
+class="math inline">\epsilon &gt;0</span>, <span class="math inline">g +
+\epsilon &gt; a</span> for some <span class="math inline">a</span>. If
+<span class="math inline">b</span> is a lower bound of <span
+class="math inline">A</span>, and it is greater than <span
+class="math inline">g</span>, let $ _0 = b-g$. Meaning <span
+class="math inline">b = g + \epsilon_0 &gt; a</span>, thus this is not
+possible. Therefore <span class="math inline">g \geq b</span>.</li>
+</ul></li>
+</ol>
+<p><a name="132"></a> ### 1.3.2 Give an example of each of the
+following, or state that the request is impossible. 1. A set <span
+class="math inline">B</span> with <span class="math inline">\text{inf }B
+\geq \text{sup }B</span>. 2. A finite set that contains its infimum but
+not its supremum. 3. A bounded subset of <span
+class="math inline">\mathbf{Q}</span> that contains its supremum but not
+its infimum.</p>
+<hr />
+<ol type="1">
+<li><span class="math inline">B = \{1\}</span>.</li>
+<li>Not possible</li>
+<li><span class="math inline">\{1, 1/2, 1/3, \cdots \}</span>.</li>
+</ol>
+<p><a name="133"></a> ### 1.3.3</p>
+<ol type="1">
+<li>Let <span class="math inline">A</span> be nonempty and bounded
+below, and define <span class="math inline">B = \{b\in \mathbf{R}: b
+\text{ is a lower bound for }A \}</span>. Show that <span
+class="math inline">\text{sup }B = \text{inf }A</span>.</li>
+<li>Use the above to explain why there is no need to assert that
+greatest lower bounds exist as part of the Axiom of Completeness.</li>
+</ol>
+<hr />
+<ol type="1">
+<li></li>
+</ol>
+<p><span class="math inline">\rightarrow</span> Let <span
+class="math inline">s= \text{sup }B</span>, and <span
+class="math inline">g= \text{inf }A</span>. First we show that <span
+class="math inline">s \leq g</span>. Suppose <span class="math inline">s
+&gt; g</span>. Meaning by Lemma 1.3.8 and taking <span
+class="math inline">\epsilon_0 = s-g</span>, <span class="math inline">g
+= s - \epsilon_0 &lt; b</span> for some <span
+class="math inline">b</span>. By definition, <span class="math inline">b
+&lt; a</span> for all <span class="math inline">a</span>, and we just
+show that <span class="math inline">b</span> is bigger than <span
+class="math inline">g</span>. But this is a contradiction of statement
+(ii) of definition 1.3.2.</p>
+<p><span class="math inline">\leftarrow</span> Next we show that <span
+class="math inline">s \geq g</span>. Suppose <span class="math inline">s
+&lt;g</span>. Then <span class="math inline">s &lt;(s+g)/2 &lt;
+g</span>, which means that <span class="math inline">(s+g)/2</span> is a
+lower bound of A. Which means <span class="math inline">(s+g)/2 \in
+\mathbf{B}</span>. However, this is a contradiction because <span
+class="math inline">s</span> by definition is greater than or equal to
+all <span class="math inline">b \in \mathbf{B}</span>.</p>
+<p><span style="color:red">Alternative, better answer: Because <span
+class="math inline">A</span> is bounded below, <span
+class="math inline">B</span> is not empty. Moreover, <span
+class="math inline">B</span> is bounded above by <span
+class="math inline">A</span>. By Axiom of Completion, we can say that
+<span class="math inline">s = \text{sup }B</span> exists. Now we need to
+show that <span class="math inline">s = \text{inf }A</span>, by proving
+that <span class="math inline">s</span> is a lower bound of A, and if
+any <span class="math inline">k</span> is a lower bound <span
+class="math inline">A</span>, <span class="math inline">k \leq
+s</span>.</span></p>
+<p><span style="color:red">On the first part, since <span
+class="math inline">A</span> is an upper bound of <span
+class="math inline">B</span>, by statement (ii) of definition 1.3.2,
+<span class="math inline">s \leq a</span> for all <span
+class="math inline">a \in A</span>. Therefore <span
+class="math inline">s</span> is a lower bound of A.</span></p>
+<p><span style="color:red">Secondly, if any <span
+class="math inline">k</span> is a lower bound of <span
+class="math inline">A</span>, then <span class="math inline">k \in
+B</span>. By statement (i) of definition 1.3.2, <span
+class="math inline">k \leq s</span>.</span></p>
+<ol start="2" type="1">
+<li>The axiom states that every nonempty set, bounded above has a least
+upper bound. The above shows the least upper bound is simply the
+greatest lower bounds of the set of all upper bound the the earlier
+set.</li>
+</ol>
+<p><span style="color:red">Better answer: By proving that the infimum of
+A is equal to the supremum of another set, we use that the existence of
+least upper bounds to assert the existence of greatest lower
+bound.</span></p>
+<p><a name="134"></a> ### 1.3.4 Let <span class="math inline">A_1, A_2,
+A_3, \cdots</span> be a collection of nonempty sets, each of which is
+bounded above.</p>
+<ol type="1">
+<li>Find a formula for sup (<span class="math inline">A_1 \cup
+A_2</span>). Extend this to sup (<span
+class="math inline">\cup_{k=1}^{n} A_k</span>).</li>
+<li>Consider sup(<span class="math inline">\cup_{k=1}^{\infty}
+A_k</span>). Does the formula in (a) extend to the infinite case?</li>
+</ol>
+<hr />
+<ol type="1">
+<li>Straight-up intuition: max {sup <span
+class="math inline">A_1</span>, sup <span
+class="math inline">A_2</span>, … <span
+class="math inline">A_n</span>}.</li>
+</ol>
+<p>Proof: Let A = <span class="math inline">\cup_{k=1}^{n} A_k</span>.
+Let M = max {sup <span class="math inline">A_1</span>, sup <span
+class="math inline">A_2</span>, …, <span
+class="math inline">A_n</span>}. We have</p>
+<p><span class="math display"> \forall x \in A, x \leq M</span></p>
+<p>Let <span class="math inline">\epsilon &gt; 0</span>. Suppose M = sup
+<span class="math inline">A_1</span></p>
+<p>then <span class="math display"> \exists a \in A_1 : M - \epsilon
+&lt; a \leq M </span></p>
+<p><span class="math display"> \implies \exists a \in A : M - \epsilon
+&lt; a \leq M </span></p>
+<p>The proof follows from lemma 1.3.8.</p>
+<p><span style="color:red">Better answer: Let <span
+class="math inline">m_k</span> = sup <span
+class="math inline">A_k</span>. Let M = sup {<span
+class="math inline">m_1</span>, <span class="math inline">m_2</span>, …,
+<span class="math inline">m_n</span>}. Let <span class="math inline">a
+\in \cup_{k=1}^{n} A_k</span>. Then <span class="math inline">a \in
+A_k</span> for some k. Thus $ a m_k M$. Therefore M is an upper bound of
+<span class="math inline">\cup_{k=1}^{n} A_k</span>. If b is another
+upper bound of <span class="math inline">\cup_{k=1}^{n} A_k</span>, then
+it is also an upper bound of each <span class="math inline">A_k</span>.
+By statement ii of definition 1.3.2, this means <span
+class="math inline">s_k \leq b</span> for each k. By statement ii of
+definition 1.3.2, this again means that <span class="math inline">s \leq
+b</span>. </span></p>
+<ol start="2" type="1">
+<li>Yes, i think.</li>
+</ol>
+<p><a name="135"></a> ### 1.3.5 Let A <span
+class="math inline">\subseteq \mathbf{R}</span> be nonempty and bounded
+above and let c be a real number. Define the set cA = {ca : a <span
+class="math inline">\in</span> A}.</p>
+<ol type="1">
+<li>If <span class="math inline">c \geq 0</span>, show that sup(cA) =
+csup(A).</li>
+<li>Postulate a similar type of statement for the case c&lt;0.</li>
+</ol>
+<hr />
+<ol type="1">
+<li><p>Let s = sup A. Then for all a <span
+class="math inline">\in</span> A, a <span class="math inline">\leq
+s</span>. Multiplying c on both sides show that cs is an upper bound of
+cA. Let b be another upper bound of cA; i.e., <span
+class="math inline">ca \leq b</span> for all a. This is equivalent to
+<span class="math inline">a \leq b/c</span> if c is not zero. Because s
+is least upper bound of <span class="math inline">a</span>, <span
+class="math inline">s \leq b/c \implies sc \leq b.</span> This proves cs
+is the least upper bound of cA. If c =0, then sup (cA) = sup (0.A) = 0 =
+0. sup(A) = c.sup(A).</p></li>
+<li><p>If <span class="math inline">c &lt; 0</span>, sup(cA) = c
+inf(A).</p></li>
+</ol>
+<p>Let s = inf A. Then for all a <span class="math inline">\in</span> A,
+a <span class="math inline">\geq s</span>. Multiplying c on both sides
+show that cs is an upper bound of cA. If b is another upper bound of cA;
+i.e., <span class="math inline">ca \leq b</span> for all a. This is
+equivalent to <span class="math inline">a \geq b/c</span>. Because s is
+greatest lower bound of <span class="math inline">a</span>, <span
+class="math inline">s \geq b/c \implies sc \leq b.</span> This proves cs
+is the least upper bound of cA.</p>
+<p><a name="136"></a> ### 1.3.6 Given sets <span
+class="math inline">A</span> and <span class="math inline">B</span>,
+define A+B = {a +b : a <span class="math inline">\in</span> A and b
+<span class="math inline">\in</span> B}. Follow these steps to prove
+that if A and B are nonempty and bounded above, then sup(A+B)=sup A +
+sup B.</p>
+<ol type="1">
+<li>Let s = sup A and t = sup B. Show s + t is an upper bound for A +
+B.</li>
+<li>Now let <span class="math inline">u</span> be an arbitrary upper
+bound for <span class="math inline">A+B</span>, and temporarily fix
+<span class="math inline">a \in A</span>. Show <span
+class="math inline">t \leq u -a</span>.</li>
+<li>Finally show sup <span class="math inline">(A+B) = s+t</span>.</li>
+<li>Construct another proof of the same fact using lemma 1.3.8.</li>
+</ol>
+<hr />
+<ol type="1">
+<li>For any a <span class="math inline">\in</span> A, <span
+class="math inline">a \leq s</span>, and for any b <span
+class="math inline">\in</span> B, <span class="math inline">b \leq
+t</span>.</li>
+</ol>
+<p>Therefore $ a + b s + t$.</p>
+<ol start="2" type="1">
+<li>For any a <span class="math inline">\in</span> A, and any b <span
+class="math inline">\in</span> B, <span class="math inline">a + b \leq
+u</span>.</li>
+</ol>
+<p><span class="math display"> \implies b \leq u -a </span></p>
+<p>By definition ii of 1.3.2, this means <span class="math inline">t
+\leq u -a</span>.</p>
+<p>From 1, we have shown that s+t is an upper bound of A + B.</p>
+<p>Let <span class="math inline">u</span> = sup (A+B). From definitin 1
+of 1.3.2, <span class="math inline">u \leq s+t</span>.</p>
+<p>From 2, we shown that $t + a u $.</p>
+<p>Similarly, $s + b u $.</p>
+<p>Adding this up,we will get <span class="math inline">s+t+a+b \leq 2u
+\implies a+b \leq 2u - s -t.</span></p>
+<p>From definition 1 of 1.3.2, <span class="math inline">u \leq 2u - s
+-t \implies s + t \leq u</span>.</p>
+<ol start="4" type="1">
+<li>Using lemma 1.3.8, sup (A+B) = sup A + sup B <span
+class="math inline">\iff</span> for every <span
+class="math inline">\epsilon &gt; 0</span>, there exist <span
+class="math inline">a+b</span> such that sup A + sup B - <span
+class="math inline">\epsilon</span> &lt; a+b.</li>
+</ol>
+<p>Take any <span class="math inline">\epsilon &gt; 0</span>, and
+consider sup A + sup B - <span class="math inline">\epsilon</span></p>
+<p><span class="math inline">\implies</span> (sup A - <span
+class="math inline">\epsilon</span>/2) + (sup B - <span
+class="math inline">\epsilon</span>/2)</p>
+<p><span class="math inline">\implies</span> (sup A - <span
+class="math inline">\epsilon</span>/2) &lt; a and (sup B - <span
+class="math inline">\epsilon</span>/2) &lt; b</p>
+<p>Adding these inequalities completes the proof.</p>
+<p><a name="137"></a> ### 1.3.7 Prove that if <span
+class="math inline">a</span> is an upper bound for <span
+class="math inline">A</span>, and if <span class="math inline">a</span>
+is also an element of <span class="math inline">A</span>, then it must
+be that <span class="math inline">a = \text{sup }A</span>.</p>
+<hr />
+<p><span class="math inline">a</span> is an upper bound.</p>
+<p>Suppose <span class="math inline">b</span> is another upper bound and
+<span class="math inline">b &lt;a</span>. But this is a contradiction
+since <span class="math inline">a \in A</span>. Therefore either <span
+class="math inline">b</span> is not an upper bound, or <span
+class="math inline">b \leq a</span>.</p>
+<p><span style="color:red">Easier: Suppose <span
+class="math inline">b</span> is another upper bound of <span
+class="math inline">A</span>. By definition <span class="math inline">b
+\geq a</span> since <span class="math inline">a</span> is an element of
+<span class="math inline">A</span>. </span></p>
+<p><a name="138"></a> ### 1.3.8 Compute without proofs the suprema and
+infima (if they exist) of the following sets:</p>
+<ol type="1">
+<li><span class="math inline">\{m/n: m,n \in \mathbf{N} \text{ with }
+m&lt;n\}</span></li>
+<li><span class="math inline">\{(-1)^m/n: m,n \in
+\mathbf{N}\}</span></li>
+<li><span class="math inline">\{n/(3n+1): n \in \mathbf{N}\}</span></li>
+<li><span class="math inline">\{m/(m+n): m , n \in
+\mathbf{N}\}</span></li>
+</ol>
+<hr />
+<ol type="1">
+<li>Supremum don’t exist. Infimum is 0</li>
+</ol>
+<p><span style="color:red">Missed <span
+class="math inline">m&lt;n</span>. Thus supremum is 1. </span></p>
+<ol start="2" type="1">
+<li>Supremum is <span class="math inline">1</span>. Infimum is <span
+class="math inline">1</span>.</li>
+</ol>
+<p>This is equal to 1/((3+1/n). Supremum is 1/3. Infimum is 1/4</p>
+<ol start="3" type="1">
+<li>This is equal to 1/(1 + n/m). Supremum is 1. Infimum is 0.</li>
+</ol>
+<p><a name="139"></a> ### 1.3.9</p>
+<ol type="1">
+<li><p>If sup A &lt; sup B, show that there exists an element <span
+class="math inline">b\in B</span> that is an upper bound for A.</p></li>
+<li><p>Given an example to show that this is not always the case if we
+only assume sup A <span class="math inline">\leq</span> sup B.</p></li>
+</ol>
+<hr />
+<ol type="1">
+<li><p>Let <span class="math inline">\epsilon</span> be such that sup $A
+= $ sup <span class="math inline">B - \epsilon</span>. By Lemma 1.3.8,
+there exists <span class="math inline">b \geq</span> sup <span
+class="math inline">A \geq a</span> for all <span
+class="math inline">a</span>.</p></li>
+<li><p>Consider <span class="math inline">A = [0,1]</span> and <span
+class="math inline">B= (0,1)</span>. sup B <span
+class="math inline">\geq</span> sup A. But there is no element in <span
+class="math inline">B</span> whereby it is an upper bound of A.</p></li>
+</ol>
+<p><a name="1310"></a> ### Exercise 1.3.10 (Cut property)</p>
+<p>If <span class="math inline">A</span> and <span
+class="math inline">B</span> are nonempty, disjoint sets with $ A B = $
+and <span class="math inline">a &lt; b</span> for all <span
+class="math inline">a \in A</span> and <span class="math inline">b \in
+B</span>, then there exists <span class="math inline">c \in R</span>
+such that <span class="math inline">x \leq c</span> whenever <span
+class="math inline">x \in A</span> and $ x c$ whenever <span
+class="math inline">x \in B</span>.</p>
+<ol type="1">
+<li>Use the Axiom of Completeness to prove the Cut Property.</li>
+<li>Show that the implication goes the other way; that is, assume <span
+class="math inline">\mathbf{R}</span> possesses the Cut Property and let
+<span class="math inline">E</span> be a nonempty set that is bounded
+above. Prove sup E exists.</li>
+<li>Give a concrete example showing that the Cut Property is not a valid
+statement when <span class="math inline">\mathbf{R}</span> is replace by
+<span class="math inline">\mathbf{Q}</span>.</li>
+</ol>
+<hr />
+<ol type="1">
+<li>Since <span class="math inline">A</span> is nonempty and bounded
+above, by the Axiom, it has a least upper bound <span
+class="math inline">s_1</span>. Thus, when <span class="math inline">x
+\in A</span>, <span class="math inline">x \leq s_1</span>.</li>
+</ol>
+<p>By definition of supremum, all upper bounds of <span
+class="math inline">A</span> is greater or equal to <span
+class="math inline">s</span>. In other words, for all <span
+class="math inline">x \in B</span>, <span class="math inline">x \geq
+s</span>.</p>
+<ol start="2" type="1">
+<li>Let <span class="math inline">B</span> be the set of all the upper
+bound of <span class="math inline">E</span>. Let <span
+class="math inline">B^c = \mathbf{R} - B</span>. Suppose <span
+class="math inline">E</span> does not have a least upper bound.</li>
+</ol>
+<p><span class="math inline">\implies</span> <span
+class="math inline">E</span> is disjointed from <span
+class="math inline">B</span>, i.e., <span class="math inline">E \cap B =
+\empty</span> because otherwise there exist sup E.</p>
+<p><span class="math inline">\implies</span> <span class="math inline">E
+\subseteq B^c</span>. Therefore, by the Cut Property, there exists <span
+class="math inline">c</span> such that <span class="math inline">x \leq
+c</span> whenever <span class="math inline">x \in E</span>, and <span
+class="math inline">x \geq c</span> whenever <span class="math inline">x
+\in B</span>.</p>
+<p><span class="math inline">\implies</span> <span
+class="math inline">c</span> cannot be in <span
+class="math inline">E</span> since <span class="math inline">E</span>
+does not have supremum. Therefore, <span class="math inline">c</span> is
+in <span class="math inline">B</span>. But this also is not possible
+because otherwise it means that <span class="math inline">c</span> is
+the smallest upper bound of <span class="math inline">E</span> – a
+contradiction.</p>
+<ol start="3" type="1">
+<li><span class="math inline">\{x: x^2 &lt; 2, x \in \mathbf{Q}
+\}</span> and <span class="math inline">\{x: x^2 &gt; 2, x \in
+\mathbf{Q} \}</span>.</li>
+</ol>
+<p><a name="1311"></a> ### Exercise 1.3.11</p>
+<p>Decide if the following statements about suprema and infima are true
+or false. Give a short proof for those that are true. For any that are
+false, supply an example where the claim in question does not hold.</p>
+<ol type="1">
+<li>If <span class="math inline">A</span> and <span
+class="math inline">B</span> are nonempty, bounded and satisfy <span
+class="math inline">A \subseteq B</span>, then sup <span
+class="math inline">A \leq</span> sup <span
+class="math inline">B</span></li>
+<li>If sup <span class="math inline">A &lt;</span> inf <span
+class="math inline">B</span> for sets <span class="math inline">A</span>
+and <span class="math inline">B</span>, then there exists <span
+class="math inline">c \in \mathbf{R}</span> satisfying <span
+class="math inline">a &lt; c &lt;b</span> for all <span
+class="math inline">a \in A</span> and <span class="math inline">b \in
+B</span>.</li>
+<li>If there exists <span class="math inline">c \in \mathbf{R}</span>
+satisfying <span class="math inline">a&lt;c&lt;b</span> for all <span
+class="math inline">a \in A</span> and <span class="math inline">b \in
+B</span>, then sup <span class="math inline">A &lt;</span> inf <span
+class="math inline">B</span>.</li>
+</ol>
+<hr />
+<ol type="1">
+<li>True. Suppose sup <span class="math inline">A &gt;</span> sup <span
+class="math inline">B</span>.</li>
+</ol>
+<p><span class="math inline">\implies</span> Take <span
+class="math inline">\epsilon = (\text{sup }A - \text{sup
+}B)/2</span></p>
+<p><span class="math inline">\implies</span> <span
+class="math inline">a_0 \geq \text{sup }A - \epsilon</span>, for some
+<span class="math inline">a_0 \in A</span> from Lemma 1.3.8. Moreover,
+sup <span class="math inline">A - \epsilon &gt; \text{sup } B \geq
+b</span>, for all <span class="math inline">b \in B</span>.</p>
+<p><span class="math inline">\implies</span> <span class="math inline">a
+\notin B</span>, which is a contradiction.</p>
+<p><span style="color:red">Easier: <span class="math inline">a
+\leq</span> sup <span class="math inline">A</span>, and <span
+class="math inline">a \leq</span> sup <span
+class="math inline">B</span>, since all <span
+class="math inline">a</span> is in <span class="math inline">B</span>.
+By definition of sup <span class="math inline">A</span>, sup <span
+class="math inline">A</span> <span class="math inline">\leq</span> sup
+<span class="math inline">B</span>. </span></p>
+<ol start="2" type="1">
+<li><p>Yes. Just find the average of sup <span
+class="math inline">A</span> and inf <span class="math inline">B</span>.
+This number is bigger than the former, but smaller than the latter. By
+definition of sup and inf, the proof is completed.</p></li>
+<li><p><span class="math inline">A = (0,1)</span> and <span
+class="math inline">B = (1,2)</span>. Taking <span
+class="math inline">c=1</span>, all <span class="math inline">a</span>
+is less than <span class="math inline">c</span>, which is less than all
+<span class="math inline">b</span>. But $c= $ sup <span
+class="math inline">A =</span> inf <span
+class="math inline">B</span>.</p></li>
+</ol>
 </body>
 </html>
