@@ -5,6 +5,7 @@ author: "Zul "
 ---
 
 <a name="toc"></a>
+
 # Table of contents
 
 [Chapter 1](#c1) | Done? | Chapter 2 | Done?
@@ -27,9 +28,11 @@ author: "Zul "
 
 
 <a name="c1"></a>
+
 ## Chapter 1 
 
 <a name="1210"></a>
+
 ### [1.2.10](#toc) 
 
 Decide which of the following are true statements. Provide a short justification for those that are valid and a counterexample for those that are not:
