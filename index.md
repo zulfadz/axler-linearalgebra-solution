@@ -45,7 +45,7 @@ Decide which of the following are true statements. Provide a short justification
 
 1. False. Let $a=b$. In this case, although $a<b+ \epsilon$ for each $\epsilon>0$, $a$ is not smaller than $b$. (Note that for the other way around, it is true: if $a<b$, then $a<b+\epsilon$ for every $\epsilon>0$. Assume there is some $\epsilon$ such that $a \geq b+ \epsilon$. Then $a-b \geq \epsilon >0$, which means $a>b$, which is a contradiction).
 2. False, as above.
-3. First, show that if $a \leq b$, then $a < b + \epsilon$ for each $\epsilon >0$. This has already been shown in 1. Second, show that if $a<b+\epsilon$ for every $\epsilon>0$, then $a \leq b$. Assume that $a > b$. Take $\epsilon_0 = a-b$. This means that $a<b + \epsilon_0 = b + a -b = a $, which is a contradiction.
+3. First, show that if $a \leq b$, then $a < b + \epsilon$ for each $\epsilon >0$. This has already been shown in 1. Second, show that if $a<b+\epsilon$ for every $\epsilon>0$, then $a \leq b$. Assume that $a > b$. Take $\epsilon_0 = a-b$. This means that $a<b + \epsilon_0 = b + a -b = a$, which is a contradiction.
 
 
 
