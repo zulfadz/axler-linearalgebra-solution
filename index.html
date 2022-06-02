@@ -430,9 +430,9 @@ above is true for <span class="math inline">n</span>. In the case of
 class="math display">B_1 \cap B_2 \cap  \cdots B_n \cap B_{n+1} =  (B_1
 \cap B_2 \cap  \cdots B_n) \cap B_{n+1}</span> which means <span
 class="math display">B_n \cap B_{n+1} </span> which is equal to <span
-class="math inline">B_{n+1}</span>. Therefore $ <em>{i=1}^{n}
-B</em>{i}=B_n$ holds for all <span class="math inline">n \in
-\mathbf{N}</span>.</p>
+class="math inline">B_{n+1}</span>. Therefore <span
+class="math inline">\bigcap_{i=1}^{n} B_{i}=B_n</span> holds for all
+<span class="math inline">n \in \mathbf{N}</span>.</p>
 <p>Nonetheless, this does not hold for infinite case, because <span
 class="math display"> \bigcap_{i=1}^{\infty} B_{i}=\emptyset</span> To
 see why, suppose there is <span class="math inline">x \in
@@ -494,8 +494,9 @@ b</span>.</li>
 <li>Lemma. Assume <span class="math inline">g \in \mathbf{R}</span> is a
 lower bound for a set <span class="math inline">A \subseteq
 \mathbf{R}</span>. Then <span class="math inline">g = \text{inf
-}A</span> if and only if for every choice $&gt;0 $, there exists an
-element <span class="math inline">a \in A</span> satisfying <span
+}A</span> if and only if for every choice <span
+class="math inline">\epsilon &gt;0</span>, there exists an element <span
+class="math inline">a \in A</span> satisfying <span
 class="math inline">g + \epsilon &gt; a.</span>
 <ul>
 <li>Assume <span class="math inline">g = \text{inf } A</span>. Then
@@ -513,9 +514,10 @@ class="math inline">\epsilon &gt;0</span>, <span class="math inline">g +
 \epsilon &gt; a</span> for some <span class="math inline">a</span>. If
 <span class="math inline">b</span> is a lower bound of <span
 class="math inline">A</span>, and it is greater than <span
-class="math inline">g</span>, let $ _0 = b-g$. Meaning <span
-class="math inline">b = g + \epsilon_0 &gt; a</span>, thus this is not
-possible. Therefore <span class="math inline">g \geq b</span>.</li>
+class="math inline">g</span>, let <span class="math inline">\epsilon_0 =
+b-g</span>. Meaning <span class="math inline">b = g + \epsilon_0 &gt;
+a</span>, thus this is not possible. Therefore <span
+class="math inline">g \geq b</span>.</li>
 </ul></li>
 </ol>
 <p><a name="132"></a></p>
@@ -702,7 +704,7 @@ class="math inline">a \leq s</span>, and for any b <span
 class="math inline">\in</span> B, <span class="math inline">b \leq
 t</span>.</li>
 </ol>
-<p>Therefore $ a + b s + t$.</p>
+<p>Therefore <span class="math inline">a + b \leq s + t</span>.</p>
 <ol start="2" type="1">
 <li>For any a <span class="math inline">\in</span> A, and any b <span
 class="math inline">\in</span> B, <span class="math inline">a + b \leq
@@ -714,8 +716,9 @@ u</span>.</li>
 <p>From 1, we have shown that s+t is an upper bound of A + B.</p>
 <p>Let <span class="math inline">u</span> = sup (A+B). From definitin 1
 of 1.3.2, <span class="math inline">u \leq s+t</span>.</p>
-<p>From 2, we shown that $t + a u $.</p>
-<p>Similarly, $s + b u $.</p>
+<p>From 2, we shown that <span class="math inline">t + a \leq
+u</span>.</p>
+<p>Similarly, <span class="math inline">s + b \leq u</span>.</p>
 <p>Adding this up,we will get <span class="math inline">s+t+a+b \leq 2u
 \implies a+b \leq 2u - s -t.</span></p>
 <p>From definition 1 of 1.3.2, <span class="math inline">u \leq 2u - s
@@ -792,11 +795,11 @@ only assume sup A <span class="math inline">\leq</span> sup B.</p></li>
 </ol>
 <hr />
 <ol type="1">
-<li><p>Let <span class="math inline">\epsilon</span> be such that sup $A
-= $ sup <span class="math inline">B - \epsilon</span>. By Lemma 1.3.8,
-there exists <span class="math inline">b \geq</span> sup <span
-class="math inline">A \geq a</span> for all <span
-class="math inline">a</span>.</p></li>
+<li><p>Let <span class="math inline">\epsilon</span> be such that sup
+<span class="math inline">A =</span> sup <span class="math inline">B -
+\epsilon</span>. By Lemma 1.3.8, there exists <span
+class="math inline">b \geq</span> sup <span class="math inline">A \geq
+a</span> for all <span class="math inline">a</span>.</p></li>
 <li><p>Consider <span class="math inline">A = [0,1]</span> and <span
 class="math inline">B= (0,1)</span>. sup B <span
 class="math inline">\geq</span> sup A. But there is no element in <span
@@ -806,13 +809,14 @@ class="math inline">B</span> whereby it is an upper bound of A.</p></li>
 <h3 id="exercise-1.3.10-cut-property"><a href="#toc">Exercise 1.3.10
 (Cut property)</a></h3>
 <p>If <span class="math inline">A</span> and <span
-class="math inline">B</span> are nonempty, disjoint sets with $ A B = $
-and <span class="math inline">a &lt; b</span> for all <span
-class="math inline">a \in A</span> and <span class="math inline">b \in
-B</span>, then there exists <span class="math inline">c \in R</span>
-such that <span class="math inline">x \leq c</span> whenever <span
-class="math inline">x \in A</span> and $ x c$ whenever <span
-class="math inline">x \in B</span>.</p>
+class="math inline">B</span> are nonempty, disjoint sets with <span
+class="math inline">A \cup B = \mathbf{R}</span> and <span
+class="math inline">a &lt; b</span> for all <span class="math inline">a
+\in A</span> and <span class="math inline">b \in B</span>, then there
+exists <span class="math inline">c \in R</span> such that <span
+class="math inline">x \leq c</span> whenever <span class="math inline">x
+\in A</span> and <span class="math inline">x \geq c</span> whenever
+<span class="math inline">x \in B</span>.</p>
 <ol type="1">
 <li>Use the Axiom of Completeness to prove the Cut Property.</li>
 <li>Show that the implication goes the other way; that is, assume <span
@@ -920,9 +924,9 @@ definition of sup and inf, the proof is completed.</p></li>
 class="math inline">B = (1,2)</span>. Taking <span
 class="math inline">c=1</span>, all <span class="math inline">a</span>
 is less than <span class="math inline">c</span>, which is less than all
-<span class="math inline">b</span>. But $c= $ sup <span
-class="math inline">A =</span> inf <span
-class="math inline">B</span>.</p></li>
+<span class="math inline">b</span>. But <span
+class="math inline">c=</span> sup <span class="math inline">A =</span>
+inf <span class="math inline">B</span>.</p></li>
 </ol>
 </body>
 </html>
