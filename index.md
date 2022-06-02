@@ -10,7 +10,7 @@ author: "Zul "
 
 [Chapter 1](#c1) | Done? | Chapter 2 | Done?
 :------------ | :-------------| :-------------| :-------------
-[1.2.10](#1210) | :heavy_check_mark: |   | :white_check_mark:
+[1.2.10](#1210) | -[x] |   | :white_check_mark:
 [1.2.11](#1211) | :heavy_check_mark: |  | :white_check_mark:
 [1.2.12](#1212) | :heavy_check_mark: |  | :white_check_mark:
 [1.2.13](#1213) | :heavy_check_mark: |  | :white_check_mark:
