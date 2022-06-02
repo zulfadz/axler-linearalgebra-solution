@@ -4,28 +4,33 @@ description: "Solutions to analysis"
 author: "Zul "
 ---
 
+<a name="toc"></a>
 # Table of contents
-1. [Chapter 1](#c1)
-  + [1.2.10](#1210)
-  + [1.2.11](#1211)
-  + [1.2.12](#1212)
-  + [1.3.1](#131)
-  + [1.3.2](#132)
-  + [1.3.3](#133)
-  + [1.3.4](#134)
-  + [1.3.5](#135)
-  + [1.3.6](#136)
-  + [1.3.7](#137)
-  + [1.3.8](#138)
-  + [1.3.9](#139)
-  + [1.3.10](#1310)
-  + [1.3.11](#1311)
+
+[Chapter 1](#c1) | Done? | Chapter 2 | Done?
+:------------ | :-------------| :-------------| :-------------
+[1.2.10](#1210) | :heavy_check_mark: |   | :white_check_mark:
+[1.2.11](#1211) | :heavy_check_mark: |  | :white_check_mark:
+[1.2.12](#1212) | :heavy_check_mark: |  | :white_check_mark:
+[1.2.13](#1213) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.1](#131) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.2](#132) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.3](#133) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.4](#134) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.5](#135) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.6](#136) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.7](#137) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.8](#138) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.9](#139) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.10](#1310) | :heavy_check_mark: |  | :white_check_mark:
+[1.3.11](#1311) | :heavy_check_mark: |  | :white_check_mark:
+
 
 <a name="c1"></a>
 ## Chapter 1 
 
 <a name="1210"></a>
-### 1.2.10 
+### [1.2.10](#toc) 
 
 Decide which of the following are true statements. Provide a short justification for those that are valid and a counterexample for those that are not:
    1. Two real numbers satisfy $a<b$ if and only if $a<b+\epsilon$ for every $\epsilon>0$.
@@ -41,7 +46,7 @@ Decide which of the following are true statements. Provide a short justification
 
 
 <a name="1211"></a>
-### 1.2.11
+### [1.2.11](#toc) 
 Form the logical negation of each claim. One trivial way to do this is to simply add "It is not the case that..." in front of each assertion. To make this interesting, fashion the negation into a positive statement that avoids using the word "not" altogether. In each case, make an intuitive guess as to whether the claim or its negation is the true statement.
   1. For all real numbers satisfying $a<b$, there exists an $n \in \mathbf{N}$ such that $a+1 / n<b$.
   2. There exists a real number $x>0$ such that $x<1 / n$ for all $n \in \mathbf{N}$.
@@ -55,7 +60,7 @@ Form the logical negation of each claim. One trivial way to do this is to simply
 
 
 <a name="1212"></a>
-### 1.2.12
+### [1.2.12](#toc) 
  Let $y_{1}=6$, and for each $n \in \mathbf{N}$ define $y_{n+1}=\left(2 y_{n}-6\right) / 3$
 
 1. Use induction to prove that the sequence satisfies $y_{n}>-6$ for all $n \in \mathbf{N}$.
@@ -91,7 +96,7 @@ $$\begin{align*}
 
  
 <a name="1213"></a>
-### 1.2.13
+### [1.2.13](#toc) 
 For this exercise, assume Exercise 1.2.5 has been successfully completed.
   1. Show how induction can be used to conclude that $$ (A_1 \cup A_{2}\cup \cdots \cup A_{n})^{c}=A_{1}^{c} \cap A_{2}^{c} \cap \cdots \cap A_{n}^{c}$$ for any finite $n \in \mathbf{N}$.
 
@@ -139,7 +144,7 @@ $$\bigcup_{i=1}^\infty A_i^c \subseteq \left(\bigcap_{i=1}^\infty A_i\right)^c  
 
 
 <a name="131"></a>
-### 1.3.1
+### [1.3.1](#toc) 
 1. Write a formal definition in the style of Definition 1.3.2 for the infimum or greatest lower bound of a set.
 2. Now, state and prove a version of lemma 1.3.8 for glb.
 
@@ -154,7 +159,7 @@ $$\bigcup_{i=1}^\infty A_i^c \subseteq \left(\bigcap_{i=1}^\infty A_i\right)^c  
     * Assume $g \leq a$ for all $a$, and that for all $\epsilon >0$, $g + \epsilon > a$ for some $a$. If $b$ is a lower bound of $A$, and it is greater than $g$, let $ \epsilon_0 = b-g$. Meaning $b = g + \epsilon_0 > a$, thus this is not possible. Therefore $g \geq b$.
 
 <a name="132"></a>
-### 1.3.2
+### [1.3.2](#toc) 
 Give an example of each of the following, or state that the request is impossible.
 1. A set $B$ with $\text{inf }B \geq \text{sup }B$.
 2. A finite set that contains its infimum but not its supremum.
@@ -167,7 +172,7 @@ Give an example of each of the following, or state that the request is impossibl
 3. $\{1, 1/2, 1/3, \cdots \}$.
 
 <a name="133"></a>
- ### 1.3.3
+ ### [1.3.3](#toc) 
 
 1. Let $A$ be nonempty and bounded below, and define $B = \{b\in \mathbf{R}: b \text{ is a lower bound for }A \}$. Show that $\text{sup }B = \text{inf }A$.
 2. Use the above to explain why there is no need to assert that greatest lower bounds exist as part of the Axiom of Completeness.
@@ -194,7 +199,7 @@ $\leftarrow$ Next we show that $s \geq g$. Suppose $s <g$. Then $s <(s+g)/2 < g$
 <span style="color:red">Better answer: By proving that the infimum of A is equal to the supremum of another set, we use that the existence of least upper bounds to assert the existence of greatest lower bound.</span> 
 
 <a name="134"></a>
-### 1.3.4
+### [1.3.4](#toc) 
 Let $A_1, A_2, A_3, \cdots$ be a collection of nonempty sets, each of which is bounded above.
 
 1. Find a formula for sup ($A_1 \cup A_2$). Extend this to sup ($\cup_{k=1}^{n} A_k$).
@@ -223,7 +228,7 @@ The proof follows from lemma 1.3.8.
 
 
 <a name="135"></a>
-### 1.3.5
+### [1.3.5](#toc) 
 Let A $\subseteq \mathbf{R}$ be nonempty and bounded above and let c be a real number. Define the set cA = {ca : a $\in$ A}.
 
 1. If $c \geq 0$, show that sup(cA) = csup(A).
@@ -238,7 +243,7 @@ Let A $\subseteq \mathbf{R}$ be nonempty and bounded above and let c be a real n
 Let s = inf A. Then for all a $\in$ A, a $\geq s$. Multiplying c on both sides show that cs is an upper bound of cA. If b is another upper bound of cA; i.e., $ca \leq b$ for all a. This is equivalent to $a \geq b/c$. Because s is greatest lower bound of $a$, $s \geq b/c \implies sc \leq b.$ This proves cs is the least upper bound of cA.
 
 <a name="136"></a>
-### 1.3.6
+### [1.3.6](#toc) 
 Given sets $A$ and $B$, define A+B = {a +b : a $\in$ A and b $\in$ B}. Follow these steps to prove that if A and B are nonempty and bounded above, then sup(A+B)=sup A + sup B.
 
 1. Let s = sup A and t = sup B. Show s + t is an upper bound for A + B.
@@ -283,7 +288,7 @@ $\implies$ (sup A - $\epsilon$/2) < a and (sup B - $\epsilon$/2) < b
 Adding these inequalities completes the proof.
 
 <a name="137"></a>
-### 1.3.7
+### [1.3.7](#toc) 
 Prove that if $a$ is an upper bound for $A$, and if $a$ is also an element of $A$, then it must be that $a = \text{sup }A$.
 
 ---
@@ -295,7 +300,7 @@ Suppose $b$ is another upper bound and $b <a$. But this is a contradiction since
 <span style="color:red">Easier: Suppose $b$ is another upper bound of $A$. By definition $b \geq a$ since $a$ is an element of $A$. </span> 
 
 <a name="138"></a>
-### 1.3.8
+### [1.3.8](#toc) 
 Compute without proofs the suprema and infima (if they exist) of the following sets:
 
 1. $\{m/n: m,n \in \mathbf{N} \text{ with } m<n\}$
@@ -316,7 +321,7 @@ This is equal to 1/((3+1/n). Supremum is 1/3. Infimum is 1/4
 3. This is equal to 1/(1 + n/m). Supremum is 1. Infimum is 0.
 
 <a name="139"></a> 
-### 1.3.9
+### [1.3.9](#toc) 
 
 1. If sup A < sup B, show that there exists an element $b\in B$ that is an upper bound for A.
 
@@ -329,7 +334,7 @@ This is equal to 1/((3+1/n). Supremum is 1/3. Infimum is 1/4
 2. Consider $A = [0,1]$ and $B= (0,1)$. sup B $\geq$ sup A.  But there is no element in $B$ whereby it is an upper bound of A.
 
 <a name="1310"></a>
-### Exercise 1.3.10 (Cut property)
+### [Exercise 1.3.10 (Cut property)](#toc) 
 
 If $A$ and $B$ are nonempty, disjoint sets with $ A \cup B = \mathbf{R}$ and $a < b$ for all $a \in A$ and $b \in B$, then there exists $c \in R$ such that $x \leq c$ whenever $x \in A$ and $ x \geq c$ whenever $x \in B$.
 
@@ -346,7 +351,7 @@ By definition of supremum, all upper bounds of $A$ is greater or equal to $s$. I
  
 2. Let $B$ be the set of all the upper bound of $E$. Let $B^c = \mathbf{R} - B$. Suppose $E$ does not have a least upper bound.
 
-$\implies$ $E$ is disjointed from $B$, i.e., $E \cap B = \empty$ because otherwise there exist sup E.
+$\implies$ $E$ is disjointed from $B$, i.e., $E \cap B = \emptyset$ because otherwise there exist sup E.
 
 $\implies$ $E \subseteq B^c$. Therefore, by the Cut Property, there exists $c$ such that $x \leq c$ whenever $x \in E$, and $x \geq c$ whenever $x \in B$.
 
@@ -355,7 +360,7 @@ $\implies$ $c$ cannot be in $E$ since $E$ does not have supremum. Therefore, $c$
 3. $\{x: x^2 < 2, x \in \mathbf{Q} \}$ and $\{x: x^2 > 2, x \in \mathbf{Q} \}$.
 
 <a name="1311"></a>
-### Exercise 1.3.11 
+### [Exercise 1.3.11](#toc)  
 
 Decide if the following statements about suprema and infima are true or false. Give a short proof for those that are true. For any that are false, supply an example where the claim in question does not hold.
 
