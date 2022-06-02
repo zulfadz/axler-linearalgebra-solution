@@ -36,7 +36,7 @@ author: "Zul "
 ### [1.2.10](#toc) 
 
 Decide which of the following are true statements. Provide a short justification for those that are valid and a counterexample for those that are not:
-
+:white_check_mark:
    1. Two real numbers satisfy $a<b$ if and only if $a<b+\epsilon$ for every $\epsilon>0$.
    2. Two real numbers satisfy $a<b$ if $a<b+\epsilon$ for every $\epsilon>0$.
    3. Two real numbers satisfy $a \leq b$ if and only if $a<b+\epsilon$ for every $\epsilon>0$.
