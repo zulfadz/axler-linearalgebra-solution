@@ -128,7 +128,7 @@ B_1 &= \mathbf{N} = \{1,2,3, \cdots\} \\
 B_2 &= \{2,3,4,\cdots\} \\
 B_3 &= \{3,4,5,\cdots\}
 \end{align*}$$ 
-We see that $$B_1 \cap B_2 = B2$$ and we will prove using induction that $$ \bigcap_{i=1}^{n} B_{i}=B_n$$ Assume the above is true for $n$. In the case of $n+1$, by associative law, $$B_1 \cap B_2 \cap  \cdots B_n \cap B_{n+1} =  (B_1 \cap B_2 \cap  \cdots B_n) \cap B_{n+1}$$ which means $$B_n \cap B_{n+1} $$ which is equal to $B_{n+1}$. Therefore $ \bigcap_{i=1}^{n} B_{i}=B_n$ holds for all $n \in \mathbf{N}$.
+We see that $$B_1 \cap B_2 = B2$$ and we will prove using induction that $$ \bigcap_{i=1}^{n} B_{i}=B_n$$ Assume the above is true for $n$. In the case of $n+1$, by associative law, $$B_1 \cap B_2 \cap  \cdots B_n \cap B_{n+1} =  (B_1 \cap B_2 \cap  \cdots B_n) \cap B_{n+1}$$ which means $$B_n \cap B_{n+1} $$ which is equal to $B_{n+1}$. Therefore $\bigcap_{i=1}^{n} B_{i}=B_n$ holds for all $n \in \mathbf{N}$.
 
 Nonetheless, this does not hold for infinite case, because $$ \bigcap_{i=1}^{\infty} B_{i}=\emptyset$$ To see why, suppose there is $x \in \mathbf{N}$ which satisfies $x \in \bigcap_{i=1}^{\infty} B_{i}$. This means that $x$ is an element of $B_i$ for all $i \in \mathbf{N}$. However, this is a contradiction because $x$ is not an element of $B_{x+1}$.
 
@@ -166,9 +166,9 @@ $$\bigcup_{i=1}^\infty A_i^c \subseteq \left(\bigcap_{i=1}^\infty A_i\right)^c  
     * $g$ is a lower bound for $A$.
     * if $b$ is any lower bound for $A$, then $g \geq b$. 
 
-2. Lemma. Assume $g \in \mathbf{R}$ is a lower bound for a set $A \subseteq \mathbf{R}$. Then $g = \text{inf }A$ if and only if for every choice $\epsilon >0 $, there exists an element $a \in A$ satisfying $g + \epsilon > a.$
+2. Lemma. Assume $g \in \mathbf{R}$ is a lower bound for a set $A \subseteq \mathbf{R}$. Then $g = \text{inf }A$ if and only if for every choice $\epsilon >0$, there exists an element $a \in A$ satisfying $g + \epsilon > a.$
     * Assume $g = \text{inf } A$. Then $g \leq a$ for all $a$. Because $g$ is the greatest lower bound, $g + \epsilon$ cannot be $\leq a$ for all $a$. Otherwise, this will contradict statement ii of definition of $g$. Thus, there exists some $a$ such that $g + \epsilon > a.$
-    * Assume $g \leq a$ for all $a$, and that for all $\epsilon >0$, $g + \epsilon > a$ for some $a$. If $b$ is a lower bound of $A$, and it is greater than $g$, let $ \epsilon_0 = b-g$. Meaning $b = g + \epsilon_0 > a$, thus this is not possible. Therefore $g \geq b$.
+    * Assume $g \leq a$ for all $a$, and that for all $\epsilon >0$, $g + \epsilon > a$ for some $a$. If $b$ is a lower bound of $A$, and it is greater than $g$, let $\epsilon_0 = b-g$. Meaning $b = g + \epsilon_0 > a$, thus this is not possible. Therefore $g \geq b$.
 
 <a name="132"></a>
 
@@ -277,7 +277,7 @@ Given sets $A$ and $B$, define A+B = {a +b : a $\in$ A and b $\in$ B}. Follow th
 
 1. For any a $\in$ A, $a \leq s$, and for any b $\in$ B, $b \leq t$. 
 
-Therefore $ a + b \leq s + t$.
+Therefore $a + b \leq s + t$.
 
 
 2. For any a $\in$ A, and any b $\in$ B, $a + b \leq u$. 
@@ -290,9 +290,9 @@ From 1, we have shown that s+t is an upper bound of A + B.
 
 Let $u$ = sup (A+B). From definitin 1 of 1.3.2, $u \leq s+t$.
 
-From 2, we shown that $t + a \leq u $. 
+From 2, we shown that $t + a \leq u$. 
 
-Similarly, $s + b \leq u $.
+Similarly, $s + b \leq u$.
 
 Adding this up,we will get $s+t+a+b \leq 2u \implies a+b \leq 2u - s -t.$
 
@@ -355,7 +355,7 @@ This is equal to 1/((3+1/n). Supremum is 1/3. Infimum is 1/4
 
 ---
 
-1. Let $\epsilon$ be such that sup $A = $ sup $B - \epsilon$. By Lemma 1.3.8, there exists $b \geq$ sup $A \geq a$ for all $a$.
+1. Let $\epsilon$ be such that sup $A =$ sup $B - \epsilon$. By Lemma 1.3.8, there exists $b \geq$ sup $A \geq a$ for all $a$.
 
 2. Consider $A = [0,1]$ and $B= (0,1)$. sup B $\geq$ sup A.  But there is no element in $B$ whereby it is an upper bound of A.
 
@@ -363,7 +363,7 @@ This is equal to 1/((3+1/n). Supremum is 1/3. Infimum is 1/4
 
 ### [Exercise 1.3.10 (Cut property)](#toc) 
 
-If $A$ and $B$ are nonempty, disjoint sets with $ A \cup B = \mathbf{R}$ and $a < b$ for all $a \in A$ and $b \in B$, then there exists $c \in R$ such that $x \leq c$ whenever $x \in A$ and $ x \geq c$ whenever $x \in B$.
+If $A$ and $B$ are nonempty, disjoint sets with $A \cup B = \mathbf{R}$ and $a < b$ for all $a \in A$ and $b \in B$, then there exists $c \in R$ such that $x \leq c$ whenever $x \in A$ and $x \geq c$ whenever $x \in B$.
 
 1. Use the Axiom of Completeness to prove the Cut Property.
 2. Show that the implication goes the other way; that is, assume $\mathbf{R}$ possesses the Cut Property and let $E$ be a nonempty set that is bounded above. Prove sup E exists.
@@ -412,7 +412,7 @@ $\implies$ $a \notin B$, which is a contradiction.
 
 2. Yes. Just find the average of sup $A$ and inf $B$. This number is bigger than the former, but smaller than the latter. By definition of sup and inf, the proof is completed.
 
-3. $A = (0,1)$ and $B = (1,2)$. Taking $c=1$, all $a$ is less than $c$, which is less than all $b$. But $c= $ sup $A =$ inf $B$.
+3. $A = (0,1)$ and $B = (1,2)$. Taking $c=1$, all $a$ is less than $c$, which is less than all $b$. But $c=$ sup $A =$ inf $B$.
 
 
 
