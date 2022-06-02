@@ -4,27 +4,29 @@ description: "Solutions to analysis"
 author: "Zul "
 ---
 
+Solutions that need polishing are marked 🔄 and unfinished solutions are marked ❎
+
 <a name="toc"></a>
 
 # Table of contents
 
-[Chapter 1](#c1) | Done? | Chapter 2 | Done?
-:------------ | :-------------| :-------------| :-------------
-[1.2.10](#1210) | ✅|   | :white_check_mark:
-[1.2.11](#1211) | :heavy_check_mark: |  | :white_check_mark:
-[1.2.12](#1212) | :heavy_check_mark: |  | :white_check_mark:
-[1.2.13](#1213) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.1](#131) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.2](#132) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.3](#133) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.4](#134) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.5](#135) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.6](#136) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.7](#137) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.8](#138) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.9](#139) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.10](#1310) | :heavy_check_mark: |  | :white_check_mark:
-[1.3.11](#1311) | :heavy_check_mark: |  | :white_check_mark:
+[Chapter 1](#c1)  | Chapter 2 
+:------------ | :-------------
+[1.2.10](#1210) | 
+[1.2.11](#1211) | 
+[1.2.12](#1212) | 
+[1.2.13](#1213) | 
+[1.3.1](#131) | 
+[1.3.2](#132) | 
+[1.3.3](#133) | 
+[1.3.4](#134) | 
+[1.3.5](#135) | 
+[1.3.6](#136) | 
+[1.3.7](#137) | 
+[1.3.8](#138) | 
+[1.3.9](#139) | 
+[1.3.10](#1310) |
+[1.3.11](#1311) | 
 
 
 <a name="c1"></a>
@@ -36,7 +38,7 @@ author: "Zul "
 ### [1.2.10](#toc) 
 
 Decide which of the following are true statements. Provide a short justification for those that are valid and a counterexample for those that are not:
-:white_check_mark:
+
    1. Two real numbers satisfy $a<b$ if and only if $a<b+\epsilon$ for every $\epsilon>0$.
    2. Two real numbers satisfy $a<b$ if $a<b+\epsilon$ for every $\epsilon>0$.
    3. Two real numbers satisfy $a \leq b$ if and only if $a<b+\epsilon$ for every $\epsilon>0$.
