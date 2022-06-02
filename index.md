@@ -110,7 +110,9 @@ $$\begin{align*}
 
 For this exercise, assume Exercise 1.2.5 has been successfully completed.
   1. Show how induction can be used to conclude that $$ (A_1 \cup A_{2}\cup \cdots \cup A_{n})^{c}=A_{1}^{c} \cap A_{2}^{c} \cap \cdots \cap A_{n}^{c}$$ for any finite $n \in \mathbf{N}$. 
+ 
   2. It is tempting to appeal to induction to conclude $$\left(\bigcup_{i=1}^{\infty} A_{i}\right)^{c}=\bigcap_{i=1}^{\infty} A_{i}^{c}$$  but induction does not apply here. Induction is used to prove that a particular statement holds for every value of $n \in \mathbf{N}$, but this does not imply the validity of the infinite case. To illustrate this point, find an example of a collection of sets $B_{1}, B_{2}, B_{3}, \ldots$ where $\bigcap_{i=1}^{n} B_{i} \neq \emptyset$ is true for every $n \in \mathbf{N}$, but $\bigcap_{i=1}^{\infty} B_{i} \neq \emptyset$ fails.
+   
   3. Nevertheless, the infinite version of De Morgan's Law stated in (b) is a valid statement. Provide a proof that does not use induction.
   
 ---
@@ -183,7 +185,7 @@ Give an example of each of the following, or state that the request is impossibl
 
 <a name="133"></a>
 
- ### [1.3.3](#toc) 
+### [1.3.3](#toc) 
 
 1. Let $A$ be nonempty and bounded below, and define $B = \{b\in \mathbf{R}: b \text{ is a lower bound for }A \}$. Show that $\text{sup }B = \text{inf }A$.
 2. Use the above to explain why there is no need to assert that greatest lower bounds exist as part of the Axiom of Completeness.
