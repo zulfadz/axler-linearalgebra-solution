@@ -27,6 +27,7 @@ Solutions that need polishing are marked 🔄 and unfinished solutions are marke
 [1.3.9](#139) | 
 [1.3.10](#1310) |
 [1.3.11](#1311) | 
+[1.4.1](#141) ❎| 
 
 
 <a name="c1"></a>
@@ -415,6 +416,18 @@ $\implies$ $a \notin B$, which is a contradiction.
 3. $A = (0,1)$ and $B = (1,2)$. Taking $c=1$, all $a$ is less than $c$, which is less than all $b$. But $c=$ sup $A =$ inf $B$.
 
 
+<a name="141"></a>
 
+### [Exercise 1.4.1](#toc) 
+
+Recall that $\mathbf{I}$ stands for the set of irrational numbers.
+  
+  1. Show that if $a, b \in \mathbf{Q}$, then $a b$ and $a+b$ are elements of $\mathbf{Q}$ as well.
+  2. Show that if $a \in \mathbf{Q}$ and $t \in \mathbf{I}$, then $a+t \in \mathbf{I}$ and $a t \in \mathbf{I}$ as long as $a \neq 0$.
+  3. Part (a) can be summarized by saying that $\mathbf{Q}$ is closed under addition and multiplication. Is $\mathbf{I}$ closed under addition and multiplication? Given two irrational numbers $s$ and $t$, what can we say about $s+t$ and $s t$?
+  
+---
+
+1. Let $a = m/n$ and $b=k/l$, where $m,n$ are integers, and $k,l$ are non-zero integers. $$ab = mk/nl$$ is in $\mathbf{Q}$ because $mk$ is integer given that integer is closed under multiplication. Similarly, $nk$ is integer and nonzero. $$a+b = m/n + k/l= (ml + nk)/(nk)$$ $ml + nk$ is integer, while $nk$ is nonzero integer
 
 
