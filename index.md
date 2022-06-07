@@ -18,7 +18,7 @@ Solutions that need polishing are marked 🔄 and unfinished solutions are marke
 [1a.3](#1a3)  |    
 [1a.4](#1a4) ❎ |  
 
-_COUNT: 561-2 = 559 EXERCISES LEFT_
+_COUNT: 561-3 = 558 EXERCISES LEFT_
 
 
 
@@ -79,7 +79,7 @@ Suppose square root of $i$ is $a+bi$. Its square is $$a^2 +2abi-b^2 = 0 +1i.$$
 
 Thus, $a^2 -b^2 =0$ and $2ab = 1$. The first equation tells that $a$ and $b$ has the same magnitude. The second equation tells that they have the same sign. Therefore $a =b$
 
-$ \implies 2a^2 =1 \implies a = \pm 1/\sqrt{2}$.
+$\implies 2a^2 =1 \implies a = \pm 1/\sqrt{2}$.
 
 Therefore the square roots of $i$ are $1/\sqrt{2}+1/\sqrt{2}i$ and $-1/\sqrt{2}-1/\sqrt{2}i.$ 
 
