@@ -240,6 +240,10 @@ $$(2-3i)(-32-9i) =(2-3i)\lambda(-6-7i) =(12-5i)(-6-7i)$$
 
 The first term is equal to $-64-27+96i-18i=-91+78i$. The last term is equal to $-72-35+30i-84i=-107-54i$. Contradiction.
 
+<a name="1a12"></a>
+
+### [1a.12](#toc) 
+
 
 
 
