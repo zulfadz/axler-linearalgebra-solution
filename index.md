@@ -245,8 +245,6 @@ The first term is equal to $-64-27+96i-18i=-91+78i$. The last term is equal to $
 ### [1a.12](#toc) 
 
 Show that $(x+y)+z=x+(y+z)$ for all $x,y,z \in F^{n}$
-
-
 ---
 
 
