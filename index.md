@@ -190,7 +190,6 @@ $$\begin{align*}
 &=[(ea-fb)+(eb+af)i]+[(ec-fd)+(fc+ed)]i \text{  by definition of addition in $\mathbf{C}$}\\
 &= (e+fi)(a+bi) + (e+fi)(c+di) \text{  by definition of multiplication in $\mathbf{C}$}\\
 &=\lambda\alpha + \lambda\beta
-
 \end{align*}$$
 
 <a name="1a10"></a>
