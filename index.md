@@ -261,7 +261,7 @@ $$\begin{align*}
 
 Show that $(ab)x = a(bx)$ for all $x\in F^{n}$ and all $a,b \in F$.
 
-
+****
 
 $$\begin{align*}
 (ab)(x_1,...,x_n) &= ((ab)x_1,...,(ab)x_n) \\
