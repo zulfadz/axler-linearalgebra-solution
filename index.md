@@ -242,15 +242,7 @@ The first term is equal to $-64-27+96i-18i=-91+78i$. The last term is equal to $
 
 
 
----
 
-$$\begin{align*}
-((x_1,...,x_n) + (y_1,...,y_n))+(z_1,...,z_n) &= (x_1+y_1,...,x_n+y_n)+(z_1,...,z_n)\\
-&=((x_1+y_1)+z_1,...,(x_n+y_n)+z_n)\\
-&=(x_1+(y_1+z_1),...,x_n+(y_n+z_n))\\
-&=(x_1,...,x_n)+(y_1+z_1,...,y_n+z_n)\\
-&=(x_1,...,x_n)+((y_1,...,y_n)+(z_1,...,z_n))\\
-&=x+(y+z)
-\end{align*}$$
+
 
 
