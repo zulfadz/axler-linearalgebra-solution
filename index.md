@@ -30,7 +30,7 @@ Solutions that need polishing are marked 🔄 and unfinished solutions are marke
 [1a.15](#1a15) |  
 [1a.16](#1a16) |  
 
-_COUNT: 561-3 = 558 EXERCISES LEFT_
+_COUNT: 561-16 = 545 EXERCISES LEFT_
 
 
 
