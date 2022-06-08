@@ -165,3 +165,11 @@ Thus $\beta = -a - bi$, and we are done.
 
 <a name="1a8"></a>
 
+### [1a.8](#toc) 
+
+Show that for  every $\alpha \in \mathbf{C}$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha + \beta = 0.$
+
+---
+
+Trivial. Follow same steps as 1a.7. If $a \neq0$, then there exists $1/a$. If $b \neq0$, then there exists $1/b$.
+
