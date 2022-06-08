@@ -16,9 +16,21 @@ Solutions that need polishing are marked 🔄 and unfinished solutions are marke
 [1a.1](#1a1)  | 
 [1a.2](#1a2)  | 
 [1a.3](#1a3)  |    
-[1a.4](#1a4) ❎ |  
+[1a.4](#1a4) |  
+[1a.5](#1a5) |  
+[1a.6](#1a6) |  
+[1a.7](#1a7) |  
+[1a.8](#1a8) |  
+[1a.9](#1a9) | 
+[1a.10](#1a10) |   
+[1a.11](#1a11) |  
+[1a.12](#1a12) |  
+[1a.13](#1a13) |  
+[1a.14](#1a14) |  
+[1a.15](#1a15) |  
+[1a.16](#1a16) |  
 
-_COUNT: 561-3 = 558 EXERCISES LEFT_
+_COUNT: 561-16 = 545 EXERCISES LEFT_
 
 
 
@@ -38,7 +50,7 @@ $$ 1/(a+bi) = c + di$$
 ---
 
 $$\begin{align*}
-1/(a+bi)*(a-bi)/(a-bi) & = c+di \\
+(1/(a+bi))((a-bi)/(a-bi)) & = c+di \\
 (a-bi)/(a^2 + b^2) &= c+di 
 \end{align*}$$
 
@@ -91,3 +103,27 @@ Show that $\alpha + \beta = \beta+\alpha$ for all $\alpha,\beta \in \mathbf{C}$.
 
   
 ---
+
+Trivial. Apply the definition of addition in $\mathbf{C}$.
+
+ <a name="1a5"></a>
+
+### [1a.5](#toc) 
+
+Show that $(\alpha + \beta) + \lambda = \alpha +(\beta+\lambda)$ for all $\alpha,\beta, \lambda \in \mathbf{C}$.
+
+  
+---
+
+Let $\alpha = a+bi$, $\beta = c+di$ and $\lambda = e+fi$, for $a,b,c,d,e,f \in \mathbf{R}$.
+
+$$\begin{align*}
+(\alpha + \beta) + \lambda &= ((a+bi)+(c+di)) +(e+fi) \\
+&= ((a+c)+(b+d)i) +(e+fi) \text{  by definition of addition in $\mathbf{C}$}\\
+&= ((a+c)+e)+(((b+d)+f)i) \text{  by definition of addition in $\mathbf{C}$}\\
+&= (a+(c+e))+((b+(d+f))i) \text{  by definition of associativity in $\mathbf{R}$}\\
+&= (a+bi)+((c+e)+(d+f)i) \text{  by definition of addition in $\mathbf{C}$}\\
+&= (a+bi)+((c+di)+(e+fi)) \text{  by definition of addition in $\mathbf{C}$}\\
+&=\alpha + (\beta +\lambda)
+\end{align*}$$
+
