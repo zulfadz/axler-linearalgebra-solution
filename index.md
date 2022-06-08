@@ -173,3 +173,24 @@ Show that for  every $\alpha \in \mathbf{C}$, there exists a unique $\beta \in \
 
 Trivial. Follow same steps as 1a.7. If $a \neq0$, then there exists $1/a$. If $b \neq0$, then there exists $1/b$.
 
+<a name="1a9"></a>
+
+### [1a.9](#toc) 
+
+Show that for  $\lambda(\alpha+\beta) = \lambda\alpha + \lambda\beta$ for all $\lambda, \alpha, \beta \in \mathbf{C}$.
+
+---
+
+$$\begin{align*}
+\lambda(\alpha + \beta) &= (e+fi)[(a+bi)+(c+di)] \\
+&= [e+fi][(a+c)+(b+d)i]  \text{  by definition of addition in $\mathbf{C}$}\\
+&=[e(a+c)-f(b+d)]+[e(b+d)+f(a+c)]i \text{  by definition of multiplication in $\mathbf{C}$} \\
+&=[ea+ec-fb-fd]+[eb+ed+fa+fc]i \text{  by definition of distributive in $\mathbf{R}$}\\
+&=[(ea-fb)+(ec-fd)]+[(eb+fa)+(fc+ed)]i \text{  by definition of associativity in $\mathbf{R}$}\\
+&=[(ea-fb)+(eb+af)i]+[(ec-fd)+(fc+ed)]i \text{  by definition of addition in $\mathbf{C}$}\\
+&= (e+fi)(a+bi) + (e+fi)(c+di) \text{  by definition of multiplication in $\mathbf{C}$}\\
+&=\lambda\alpha + \lambda\beta
+\end{align*}$$
+
+<a name="1a10"></a>
+
