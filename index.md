@@ -150,3 +150,18 @@ $$\begin{align*}
 &=\alpha(\beta\lambda)
 \end{align*}$$
 
+<a name="1a7"></a>
+
+### [1a.7](#toc) 
+
+Show that for  every $\alpha \in \mathbf{C}$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha + \beta = 0.$
+
+  
+---
+
+Let $\alpha = a+bi$, for $a,b,=\in \mathbf{R}$. There exists a unique $-a$ and $-b$ such that $a-a=0$ and $b-b=0$ by property of real numbers.
+
+Thus $\beta = -a - bi$, and we are done.
+
+<a name="1a8"></a>
+
