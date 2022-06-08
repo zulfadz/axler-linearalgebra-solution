@@ -240,72 +240,20 @@ $$(2-3i)(-32-9i) =(2-3i)\lambda(-6-7i) =(12-5i)(-6-7i)$$
 
 The first term is equal to $-64-27+96i-18i=-91+78i$. The last term is equal to $-72-35+30i-84i=-107-54i$. Contradiction.
 
+<a name="1a12"></a>
 
+### [1a.12](#toc) 
 
-<a name="1a13"></a>
-
-### [1a.13](#toc) 
-
-Show that $(ab)x = a(bx)$ for all $x\in F^{n}$ and all $a,b \in F$.
+Show that $(x+y)+z=x+(y+z)$ for all $x,y,z \in F^{n}$
 
 ---
 
 $$\begin{align*}
-(ab)(x_1,...,x_n) &= ((ab)x_1,...,(ab)x_n) \\
-&=((a)(bx_1),...,(a)(bx_n))\\
-&=a(bx_1,...,bx_n)\\
-&=a(b(x_1,...,x_n)\\
-&=a(bx)
+((x_1,...,x_n) + (y_1,...,y_n))+(z_1,...,z_n) &= (x_1+y_1,...,x_n+y_n)+(z_1,...,z_n)\\
+&=((x_1+y_1)+z_1,...,(x_n+y_n)+z_n)\\
+&=(x_1+(y_1+z_1),...,x_n+(y_n+z_n))\\
+&=(x_1,...,x_n)+(y_1+z_1,...,y_n+z_n)\\
+&=(x_1,...,x_n)+((y_1,...,y_n)+(z_1,...,z_n))\\
+&=x+(y+z)
 \end{align*}$$
-
-<a name="1a14"></a>
-
-### [1a.14](#toc) 
-
-Show that $1x = x$ for all $x\in F^{n}$.
-
----
-
-$1(x_1,...,x_n)=(1x_1,...,1x_n)=(x_1,...,x_n) = x$
-
-<a name="1a15"></a>
-
-### [1a.15](#toc) 
-
-Show that $\lambda(x+y) = \lambda x + \lambda y$ for all $\lambda\in F$ and all $x,y \in F^n$.
-
----
-
-$$\begin{align*}
-\lambda ((x_1,...,x_n) + (y_1,...,y_n)) &= \lambda(x_1 +y_1,...,x_n + y_n) \\
-&=(\lambda (x_1+y_1),..., \lambda (x_n+y_n))\\
-&= (\lambda x_1 + \lambda y_1,..., \lambda x_n + \lambda y_n)\\
-&= (\lambda x_1,...,\lambda x_n)+ (\lambda y_1,...,\lambda y_n)\\
-&=\lambda (x_1,...,x_n) + \lambda (y_1,...,y_n) \\
-&=\lambda x + \lambda y\\
-\end{align*}$$
-
-<a name="1a16"></a>
-
-### [1a.16](#toc) 
-
-Show that $(a+b)x = ax+bx$ for all $a,b,\in F$ and all $x\in F^n$
-
----
-
-$$\begin{align*}
-(a+b)x &= (a+b)(x_1,...,x_n) \\
-&=((a+b)x_1,...,(a+b)x_n)\\
-&=(ax_1+bx_1,...,ax_n+bx_n)\\
-&=(ax_1,...,ax_n) + (bx_1,...,bx_n)\\
-&=a(x_1,...,x_n) + b(x_1,...,x_n)\\
-&= ax+bx
-\end{align*}$$
-
-
-
-
-
-
-
 
