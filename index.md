@@ -277,7 +277,7 @@ $$\begin{align*}
 
 Show that $1x = x$ for all $x\in F^{n}$.
 
-
+***
 
 $1(x_1,...,x_n)=(1x_1,...,1x_n)=(x_1,...,x_n) = x$
 
@@ -287,7 +287,7 @@ $1(x_1,...,x_n)=(1x_1,...,1x_n)=(x_1,...,x_n) = x$
 
 Show that $\lambda(x+y) = \lambda x + \lambda y$ for all $\lambda\in F$ and all $x,y \in F^n$.
 
-
+***
 
 $$\begin{align*}
 \lambda ((x_1,...,x_n) + (y_1,...,y_n)) &= \lambda(x_1 +y_1,...,x_n + y_n) \\
@@ -304,7 +304,7 @@ $$\begin{align*}
 
 Show that $(a+b)x = ax+bx$ for all $a,b,\in F$ and all $x\in F^n$
 
-
+***
 
 $$\begin{align*}
 (a+b)x &= (a+b)(x_1,...,x_n) \\
