@@ -127,3 +127,26 @@ $$\begin{align*}
 &=\alpha + (\beta +\lambda)
 \end{align*}$$
 
+ <a name="1a6"></a>
+
+### [1a.6](#toc) 
+
+Show that $(\alpha\beta)\lambda = \alpha(\beta\lambda)$ for all $\alpha,\beta, \lambda \in \mathbf{C}$.
+
+  
+---
+
+Let $\alpha = a+bi$, $\beta = c+di$ and $\lambda = e+fi$, for $a,b,c,d,e,f \in \mathbf{R}$.
+
+$$\begin{align*}
+(\alpha\beta)\lambda &= [(a+bi)(c+di)](e+fi) \\
+&= [(ac-bd)+(ad+bc)i](e+fi) \text{  by definition of multiplication in $\mathbf{C}$}\\
+&= [(ac-bd)e-(ad+bc)f]+[((ac-bd)f+(ad+bc)e)i]\text{  by definition of multiplication in $\mathbf{C}$}\\
+&=[ace-bde-adf-bcf] +[acf-bdf+ade+bce]i \text{  by definition of distributive in $\mathbf{R}$}\\
+&=[(ace-adf)-(bcf+bde)]+[(acf+ade)+(bce-bdf)]i \text{  by definition of associativity in $\mathbf{R}$}\\
+&= [a(ce-df)-b(cf+de)]+[a(cf+de) + b(ce-df)]i\text{  by definition of distributive in $\mathbf{R}$}\\
+&= (a+bi)[(ce-df)+(cf+de)i] \text{  by definition of multiplication in $\mathbf{C}$}\\
+&= (a+bi)[(c+di)(e+fi)] \\
+&=\alpha(\beta\lambda)
+\end{align*}$$
+
