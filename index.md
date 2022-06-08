@@ -206,3 +206,37 @@ $2x = (1,12,-7,1)$
 
 $x = (1/2,6,-7/2,1/2)$
 
+<a name="1a11"></a>
+
+### [1a.11](#toc) 
+
+Explain why there does not exist $\lambda \in \mathbf{C}$ such that
+
+$$\lambda(2-3i,5+4i,-6+7i) = (12-5i,7+22i,-32-9i)$$
+
+---
+Suppose there is such $\lambda$. Then
+
+$$\lambda(2-3i)=12-5i$$
+
+and
+
+
+$$\lambda(5+4i) = 7+22i$$
+
+which means
+
+$$(2-3i)(7+22i) = (2-3i)\lambda(5+4i) = (12-5i)(5+4i)$$
+
+The first term is equal to $14+66-21i+44i =80+23i.$ The last term is equal to $60+20-25i+48i=80+32i$. So consistent.
+
+Repeat the steps above with the following instead:
+
+$$\lambda(-6+7i) = -32-9i$$
+
+which means
+
+$$(2-3i)(-32-9i) =(2-3i)\lambda(-6-7i) =(12-5i)(-6-7i)$$
+
+The first term is equal to $-64-27+96i-18i=-91+78i$. The last term is equal to $-72-35+30i-84i=-107-54i$. Contradiction.
+
